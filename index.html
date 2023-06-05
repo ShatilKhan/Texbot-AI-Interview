@@ -1,0 +1,47 @@
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+<div class="line">
+  <p class="header-text">You are in practice mode. Please relax and get comfortable with the process,    no data will be stored</p>
+</div>
+<div class="text">
+  <h1 >Live AI Interview Assessment</h1>
+  
+    <div id="getQuestionsBtn">
+    <h2 id="questions"></h2>
+    <button onClick="question()">Next Question</button>
+</div>
+  
+  <p>Press the Enable Webcam button to start recording your answer.</p>
+  
+
+
+<div id="liveView" class="enable-btn">
+  <button id="webcamButton" class="mdc-button mdc-button--raised">
+    <span class="mdc-button__ripple"></span>
+    <span class="mdc-button__label mdc-button__ripple">ENABLE WEBCAM</span>
+  </button>
+  <video id="webcam" autoplay playsinline></video>
+</div>
+
+<div class="videoView">
+  <video id="recordedVideo" controls></video>
+</div>
+<div class="buttons">
+    <button id="recordButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">RECORD</span>
+    </button>
+    <button id="stopButton" class="mdc-button mdc-button--raised disabled">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">STOP</span>
+    </button>
+    <button id="playButton" class="mdc-button mdc-button--raised">
+      <span class="mdc-button__ripple"></span>
+      <span class="mdc-button__label">PLAY RECORDED VIDEO</span>
+    </button>
+</div>
+<div class="black">
+  <p class="header-text">© 2023 Shahriar Shatil.  All Rights Reserved.</p>
+</div>
+

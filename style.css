@@ -1,0 +1,152 @@
+
+
+@use "@material";
+body {
+  font-family: roboto;
+  color: #3d3d3d;
+  --mdc-theme-primary: #007f8b;
+  --mdc-theme-on-primary: #f1f3f4;
+}
+.line {
+  background-color: #84B59F;
+  width: 100%;
+  height: 25px;
+  color: #666569;
+}
+.header-text {
+  padding-top: 4px;
+  text-align: center;
+  font-size: 15px;
+}
+.text {
+  margin: 2em;
+}
+
+h1 {
+  color: #007f8b;
+}
+
+h2 {
+  clear: both;
+}
+
+em {
+  font-weight: bold;
+}
+
+#webcam {
+  clear: both;
+  display: block;
+  border-radius: 50px;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+}
+
+#recordedVideo {
+  filter: scaleX(-1);
+}
+
+.enable-btn {
+  margin-left: 2em;
+}
+section {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out;
+}
+
+.mdc-button.mdc-button--raised.removed {
+  display: none;
+}
+
+.invisible {
+  opacity: 0.2;
+}
+
+.videoView,
+.detectOnClick {
+  top: 20%;
+  position: absolute;
+  right: 7%;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.videoView p {
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+.buttons {
+  position: absolute;
+  right: 5%;
+  top: calc(20% + 180px);
+/*   bottom: 180px; */
+}
+.highlighter {
+  background: rgba(0, 255, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+.detectOnClick {
+  z-index: 0;
+}
+
+.detectOnClick img {
+  width: 100%;
+}
+.key-point {
+  position: absolute;
+  z-index: 1;
+  width: 3px;
+  height: 3px;
+  background-color: #ff0000;
+  /* border: 1px solid #ffffff; */
+  border-radius: 50%;
+  display: block;
+}
+/* Add styles for new buttons */
+#recordButton,
+#stopButton {
+  margin-top: 10px;
+}
+
+/* Add styles for disabled buttons */
+.mdc-button.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+#recordedVideo {
+  filter: scaleX(-1);
+}
+.black{
+  position; absolute;
+  margin-top: 50px;
+  width: 100%;
+  height: 25px;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
